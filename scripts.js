@@ -10,13 +10,6 @@ class Parquimetro {
     calcula() {
         let tempo = 0;
         let valorInserido = parseFloat(document.getElementById('valor').value);
-        
-        // Verifica se o valor é válido
-        if (isNaN(valorInserido) || valorInserido <= 0) {
-            alert("Por favor, insira um valor válido maior que zero!");
-            return;
-        }
-
         let troco = valorInserido;
         this.tabela.sort((a, b) => b.valor - a.valor);
         
