@@ -1,0 +1,148 @@
+/*Css RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Plano de fundo*/
+body {
+    /*Cor e Cor de fundo*/
+    background: #ffffff;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(65, 67, 69, 1) 100%);
+    /*Fonte de texto*/
+    font-family: sans-serif;
+}
+
+/*Box principal*/
+main {
+    /*Cor*/
+    background-color: #807A7A;
+    color: #DCDCDC;
+    /*Borda e sombreamento*/
+    border: 4px double #483D8B;
+    box-shadow: 5px 5px 5px black;
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*Largura*/
+    width: 100%;
+    max-width: 400px;
+    /*Margin e espaçamento*/
+    margin: auto;
+    margin-top: 10px;
+    padding: 50px;
+
+}
+
+/*Título principal*/
+h1{
+    /*Alinhamento de texto*/
+    text-align: center;
+    /*Decoração do texto*/
+    text-decoration: underline;
+    /*Margem e espaçamento*/
+    margin-bottom: 40px;
+}
+
+/*tabela principal*/
+table{
+    /*borda entre células*/
+    border: 4px solid black;
+    border-collapse: collapse;
+    /*margem e espaçamento*/
+    padding: 15px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+
+/*Campo para colocar o valor*/
+input {
+    /*margem e espaçamento*/
+    padding-bottom: 20px;
+    /*display em bloco*/
+    display: block;
+    /*largura*/
+    width: 300px;
+    /*Cor de fundo e da fonte*/
+    background-color: #807A7A;
+    color: white;
+    /*retirada da borda*/
+    border: none;
+    /*cursor*/
+    cursor: pointer;
+    /*tamanho da fonte*/
+    font-size: 20px;
+    /*selecionável pelo usuário*/
+    user-select: none;
+    /*alinhamento de texto*/
+    text-align: center;
+}
+
+/*Apagar a aparência de selecionável do input*/
+input:focus{
+    outline: none;
+}
+
+/*botão calcular*/
+button{
+    /*margem*/
+    margin: auto;
+    margin-top: 40px;
+    /*Altura e largura*/
+    height: 70px;
+    width: 150px;
+    /*cursor*/
+    cursor: pointer;
+    /*tamanho da fonte*/
+    font-size: 20px;
+}
+
+/*botão calcular clicado*/
+button:active{
+    /*cores de fonte e de fundo*/
+    background-color: #363636;
+    color: #DCDCDC;
+}
+
+/*legenda do input*/
+::placeholder {
+    /*alinhamento central*/
+    text-align: center;
+    color: white;
+}
+
+/*Cabeçalho, colunas e linhas da tablea*/
+table th, table td{
+    /*borda*/
+    border: 1px solid black;
+}
+
+/*Cabeçalho da tabela*/
+table th{
+    /*cores de fundo e letra*/
+    background-color: #363636;
+    color: #DCDCDC;
+}
+
+/*parágrafo onde será exibido os resultados*/
+p{
+    /*margim e espaçamento*/
+    margin-top: 20px;
+    /*tamanho da fonte*/
+    font-size: 25px;
+}
+
+/*campo do input*/
+fieldset{
+    /*borda*/
+    border: 2px solid black;
+}
+
+/*legenda do input*/
+legend{
+    /*cor e espessura da fonte*/
+    color:white;
+    font-weight: bold;
+}

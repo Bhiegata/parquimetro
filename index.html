@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Encapsulamento de dados-->
+        <meta charset="UTF-8">
+        <!--Responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale 1.0">
+        <!--Título-->
+        <title>Parquímetro</title>
+        <!--Link para CSS-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Conteúdo principal-->
+        <main>
+            <!--Título inicial-->
+            <h1>Parquímetro</h1>
+            <!--Tabela de preço / minutos-->
+            <table>
+                <thead>
+                    <tr>
+                        <!--Cabeçalho da tabela-->
+                        <th>Valor</th>
+                        <th>Tempo</th>
+                    </tr>
+                </thead>
+                <!--Conteúdo da tabela-->
+                <tbody>
+                    <tr>
+                        <td>R$ 1,00</td>
+                        <td>30 minutos</td>
+                    </tr>
+                    <tr>
+                        <td>R$ 1,75</td>
+                        <td>60 minutos</td>
+                    </tr>
+                    <tr>
+                        <td>R$ 3,00</td>
+                        <td>120 minutos (tempo máx)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Campo a ser digitado valor-->
+            <fieldset>
+                <label for="valor"></label>
+                <legend>Valor (R$)</legend>
+                <input type="number" id="valor" name="valor" required placeholder="Digite o valor (R$)" />
+            </fieldset>
+            <!--Botão para calcular-->
+            <button id="calcular" onClick="calcula()">Calcular</button>
+            <!--Resultado da opeção calcular-->
+            <p id="tempo"></p>
+            <p id="troco"></p>
+        </main>
+        <script src="scripts.js"></script>
+    </body>
+</html>
+    
